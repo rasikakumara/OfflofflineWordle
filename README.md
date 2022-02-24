@@ -1,1 +1,1 @@
-# OfflofflineWordle
+# offlineWordle
