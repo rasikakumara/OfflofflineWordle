@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.1555" />
         <entry key="app/src/main/res/drawable/ic_check_light.xml" value="0.1555" />
         <entry key="app/src/main/res/drawable/ic_help.xml" value="0.1555" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13405797101449277" />
         <entry key="app/src/main/res/layout/fragmennt_wordle_game.xml" value="1.167763157894737" />
         <entry key="app/src/main/res/layout/fragment_help.xml" value="0.1890625" />

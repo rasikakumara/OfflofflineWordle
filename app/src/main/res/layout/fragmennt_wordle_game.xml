@@ -7,12 +7,13 @@
     android:background="@color/white"
     tools:context=".WordleGameFragment">
 
-    <androidx.constraintlayout.widget.Constraints
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white">
 
-        <androidx.constraintlayout.widget.Constraints
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/titlebar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,7 +25,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
-
 
             <TextView
                 android:id="@+id/titlebar_title"
@@ -58,7 +58,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:contentDescription="@string/help" />
 
-        </androidx.constraintlayout.widget.Constraints>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!--Start of Textview Grid -->
         <TextView
@@ -560,7 +560,6 @@
             android:importantForAutofill="no"
             android:inputType="text"
             android:minHeight="48dp"
-            app:layout_constraintBottom_toTopOf="@id/correct_letters_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/line_bottom_of_grid" />
@@ -572,7 +571,6 @@
             android:layout_marginTop="24dp"
             android:textSize="24sp"
             android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@id/correct_letters_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/line_bottom_of_grid" />
@@ -604,51 +602,6 @@
             app:layout_constraintTop_toBottomOf="@id/dictionary_link" />
 
 
-        <TextView
-            android:id="@+id/correct_letters_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:text="@string/correct_label"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/barrier4" />
-
-        <TextView
-            android:id="@+id/incorrect_letters_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="24dp"
-            android:text="@string/incorrect_label"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/incorrect_letters"
-            app:layout_constraintTop_toTopOf="@id/correct_letters_label" />
-
-        <TextView
-            android:id="@+id/correct_letters"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:textColor="#4CAF50"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/vertical_guideline_45"
-            app:layout_constraintStart_toStartOf="@id/correct_letters_label"
-            app:layout_constraintTop_toBottomOf="@id/correct_letters_label" />
-
-        <TextView
-            android:id="@+id/incorrect_letters"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textColor="#F44336"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@id/incorrect_letters_label"
-            app:layout_constraintStart_toStartOf="@id/vertical_guideline_55"
-            app:layout_constraintTop_toTopOf="@id/correct_letters" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/vertical_guideline_45"
@@ -678,6 +631,7 @@
             app:constraint_referenced_ids="reset_button,text_entry,dictionary_link"
             tools:layout_editor_absoluteY="605dp" />
 
-    </androidx.constraintlayout.widget.Constraints>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
