@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="undecided_gray">#4A656565</color>
+    <color name="check_color">#000000</color>
+    <color name="black_or_white">#000000</color>
+    <color name="incorrect_gray">#2C2C2C</color>
+    <color name="instruction_text_color">#B3000000</color>
+    <color name="instruction_header_text_color">#D9000000</color>
+    <color name="almost_correct_yellow">#FFFFEB3B</color>
+    <color name="correct_green">#097812</color>
 </resources>
